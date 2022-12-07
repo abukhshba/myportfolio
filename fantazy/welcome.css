@@ -1,0 +1,111 @@
+*{
+  font-family:Times New Roman (Headings CS);  
+  
+}
+
+    .background1{
+        position: absolute;
+        top: 0%;
+         right: 0%;
+        height: 65%;
+        background: #ccdcd9;
+        width: 100%;
+        
+    }
+    
+    .background3{
+        position: absolute;
+        top: 65%;
+         right: 0%;
+        height: 20%;
+        width: 100%;
+        background: #67de9d;
+    }
+    .background4{ 
+        position: absolute;
+        top: 85%;
+         right: 0%;
+        height: 15%;
+        width: 100%;
+        background: #29936d;
+    }
+    
+    .Fantasy
+    {
+      color: white;
+       margin:  20px;
+       margin-bottom: 0px;
+       padding:25px;
+       text-align:left;
+       font-size:100px;
+       font-family: Century Gothic;
+       background: #1b544d;
+      
+    
+    }
+    .copyright1{
+        
+        position: absolute;
+        top: 90%;
+        right: 44%;
+        font-size: 12px;
+        font-family: Bell MT;
+        display: inline-flex;
+        flex-wrap: nowrap;
+            
+            
+    }
+    .copyright2{
+       
+        position: absolute;
+        top: 93%;
+        right: 48%;
+        font-size: 12px;
+        font-family: Bell MT;
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+    .login
+    {
+        background: #a97a62;
+       
+        width: 80px;
+        border: 2px solid #a97a62;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
+    
+    .login:hover
+    {
+        background: #d69b7c
+    }
+    input{
+        padding: 7px;
+        margin: 5px;
+        border-radius: 8px;
+    }   
+    
+    .register{
+        padding: 20px;   
+        position: absolute;
+        left:  10%;
+        top: 30%
+            
+        
+    }
+   .hint{
+        font-size: 20;
+        padding: 10px;
+     }
+    
+    
+    .signup{
+        color: #916954;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+     

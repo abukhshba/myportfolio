@@ -1,0 +1,93 @@
+*{
+  font-family:Times New Roman (Headings CS);  
+  
+}
+body{
+    margin: 0px;
+}
+
+    .background1{
+        height: 557px;
+        background: #cbe2dd;
+    }
+    
+    
+    .background3{
+        height: 100px;
+        background: #1d7650;
+    }
+    
+    
+      .Fantasy
+    {
+        width: 1273px;
+        color: white;
+        margin:  20px;
+        padding:25px;
+        font-size:100px;
+        font-family: Century Gothic;
+        background: #1b544d;
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+ input{
+        border-radius: 9px;
+    }
+    .name, .email_date,.password,.submitttag{
+       display: inline-flex;
+       flex-wrap: nowrap;
+        margin-left: 120px; 
+       
+    }
+    .fullname,.Username,.password1,.password2, .email{
+        margin: 12px;
+        padding: 11px;
+        width: 200px
+    }
+    .date{
+        margin: 12px;
+        padding: 11px;
+        width: 200px
+    }
+    
+    
+    select{
+         display: inline-flex;
+       flex-wrap: nowrap;
+       margin-left: 320px;
+        padding: 8px;
+        font-size: 17px;
+        width: 90px;
+        border-radius: 9px;
+    }
+    
+     .sign-up,.reset
+    {
+        background: #a97a62;
+        margin:  8px;
+        width:230px;
+        border: 0.5px solid #a97a62;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        height: 35px;
+        font-weight: bold;
+        display: block-flex;
+       flex-wrap: nowrap;
+        margin-left: 255px; 
+        border-radius: 25px;
+    }
+    
+    
+    .sign-up:hover
+    {
+        background: #d69b7c;
+    }
+    .reset:hover
+    {
+        background: #d69b7c;
+    }
+   
+    
+   
+    

@@ -1,0 +1,315 @@
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Century Gothic;
+
+}
+
+.head1 {
+    background: #0f0e0e;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 1349px;
+    height: 110px;
+
+}
+
+.search {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.search1 {
+
+    margin-top: 48px;
+    margin-left: 100px;
+    border-radius: 10px;
+    padding: 7px;
+    border: black;
+    height: 30px
+}
+
+.search2 {
+    margin-top: 48px;
+    border-radius: 10px;
+    border: 0.01px solid;
+    background: #990000;
+    width: 100px;
+    padding: 7px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+
+}
+
+.titles {
+    margin-left: 300px;
+    padding-top: 33px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+}
+
+.home,
+.Services,
+.Dubbing,
+.News,
+.Contact_Us,
+.About_Us {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+
+    font-family: Century Gothic;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+
+.head2 {
+    margin-top: 0px;
+    height: 410px;
+    width: 1349px;
+    background-image: url('img/tech1.jpg');
+    background-size: 100% 100%;
+    font-family: Gill Sans MT;
+    font-weight: bold;
+    color: #ffffff;
+
+    text-align: center;
+    padding-top: 190px;
+    font-size: 80px;
+}
+
+.goal {
+    text-align: center;
+    margin-top: 90px;
+
+    color: #576ac6;
+    font-family: Century Gothic;
+    font-size: 60px;
+    font-weight: bold;
+
+}
+
+.ScopeSky {
+    font-weight: bold;
+    color: black;
+}
+
+.paragraph {
+    width: 600px;
+    text-align: center;
+    margin-left: 380px;
+    font-size: 20px;
+    font-family: Century Gothic;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    line-height: 30px;
+
+}
+
+.line {
+    width: 800px;
+    height: 40px;
+    margin-left: 280px;
+    border-bottom: 2px solid;
+
+}
+
+.image3 {
+    margin-left: 110px;
+
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    padding: 110px;
+    padding-bottom: 20px;
+
+}
+
+.text1 {
+    margin-left: 20px;
+
+}
+
+.Cultural,
+.Literary,
+.Scientific,
+.Media {
+    padding-left: 172px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #666666;
+    font-family: Century Gothic;
+    text-decoration: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.img7 {
+    margin-left: 105px;
+    margin-top: 120px;
+}
+
+.image5 {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.img8,
+.img9,
+.img10 {
+    padding: 110px;
+    padding-bottom: 0px;
+}
+
+.text2 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+
+
+}
+
+.producing,
+.famous,
+.entertaining {
+    width: 295px;
+    padding-top: 0px;
+    letter-spacing: 3px;
+    font-family: Century Gothic;
+    font-size: 18;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+}
+
+.producing {
+    margin-left: 100px
+}
+
+.famous {
+    margin-left: 150px;
+}
+
+.entertaining {
+    margin-left: 150px;
+}
+
+.middlefather {
+    height: 180px;
+    width: 1349px;
+    background: #8ba0b5;
+    margin-top: 100px;
+    font-family: Century Gothic;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+
+}
+
+.middleson {
+    height: 180;
+    width: 900;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-left: 115px
+}
+
+.middle1,
+.middle2,
+.middle3,
+.middle4 {
+    margin-left: 150px;
+    padding-top: 35px;
+    text-align: center;
+    color: white;
+
+}
+
+.num {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 6px;
+    padding-top: 14px;
+}
+
+.prjectname {
+    font-size: 14px;
+
+}
+
+.textbelow {
+    margin-top: 10px;
+    font-size: 45px;
+    text-align: center;
+    width: 950px;
+    color: #145693;
+    margin-left: 225px;
+    font-family: Century Gothic;
+
+}
+
+.ScopeSkyMedia {
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+.bellow {
+    background: #8ba0b5;
+    height: 370px;
+    width: 1349px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+
+}
+
+.bellow1,
+.bellow2,
+.bellow3 {
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.bellow4 {
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+}
+
+.listhead {
+    color: white;
+    font-size: 35px;
+}
+
+.listofservices {
+    text-decoration: none;
+    font-size: 23px;
+    color: #333;
+
+}
+
+li {
+    padding: 8px;
+}
+
+.the_end {
+    color: white;
+    background-color: #383636;
+
+    font-size: 12px;
+    text-align: center;
+    padding: 18.5px;
+}

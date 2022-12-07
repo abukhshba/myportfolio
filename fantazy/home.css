@@ -1,0 +1,96 @@
+*{
+  font-family:Times New Roman (Headings CS);  
+  
+}
+.background1{
+        position: absolute;
+        top: 0%;
+         right: 0%;
+        height: 65%;
+        background: #cbe2dd;
+        width: 100%;
+    }
+    .background3{
+        position: absolute;
+        top: 65%;
+         right: 0%;
+        height: 20%;
+        width: 100%;
+        background: #67de9d;
+    }
+    .background4{ 
+        position: absolute;
+        top: 85%;
+         right: 0%;
+        height: 15%;
+        width: 100%;
+        background: #29936d;
+    }
+    
+     .Fantasy
+    {
+      color: white;
+       margin:  20px;
+       margin-bottom: 0px;
+       padding:25px;
+       text-align:left;
+       font-size:100px;
+       font-family: Century Gothic;
+       background: #1b544d;
+        
+    }
+    
+    .home,.my-team,.points,.leages,.transfers
+    {
+     color: white;
+     padding: 10px;
+     margin-right: 0px;
+    position: absolute;
+    width: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none
+  
+     
+    }   
+    .home{
+        background: #7b5947;
+        left : 10%
+    }
+    
+    
+    .my-team{
+        background: #916954;
+        left:  19%
+    }
+    .points{
+        background:#a97a62;
+        left: 28%
+    }
+    .leages{
+        background:#bb876c;
+        left: 37%
+    }
+    .transfers{
+        background: #d69b7c;
+        left: 46%
+    }   
+    
+    .copyright1{
+        
+        position: absolute;
+        top: 90%;
+        right: 44%;
+        font-size: 12px;
+        font-family: Bell MT
+            
+    }
+    .copyright2{
+       
+        position: absolute;
+        top: 93%;
+        right: 48%;
+        font-size: 12px;
+        font-family: Bell MT;
+    }
+    

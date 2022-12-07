@@ -1,0 +1,437 @@
+body{
+    margin: 0px auto;
+    margin-top: 0px;
+    height: 4650px;
+    width: 1349px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+        
+}
+.topWords{
+    background-color: #265586;
+    margin: 0 px;
+    padding: 0px;
+    height: 35px;
+
+}
+.wordOfTop{
+    margin: 0px;
+    padding-top: 5px;
+    color: white;
+    padding-left: 150px;
+}
+.container1{
+    height: 150px;
+}
+.logo{
+    display: inline-block;
+   padding-left: 150px;
+    width: 30%;
+    float:left;
+    margin-top: 20px;
+    
+}
+.details
+{
+    display: inline-block;
+    width: 600px;
+    height: 60px;
+   margin-left: 80px;
+background-color:#083d77;
+margin-top: 32px;
+color: white;
+
+
+}
+.details1{
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+.details2{
+    display: inline-block;
+    width: 32%;
+    float: left;
+    border-left: 1px #6686cf solid;
+    padding-left: 7px;
+}
+.details3{
+    display: inline-block;
+    width: 30%;
+    float: left;
+    border-left: 1px #6686cf solid;
+    padding-left: 7px;
+}
+.img1{
+   margin-top: 20px; 
+}
+.img2{
+   margin-bottom: 10px; 
+   
+}  
+
+.tophead{
+display: inline-block;
+    margin-top: 20px; 
+    font-weight: bold;
+    font-size: 20px;
+}
+.tophead2{
+    color:#6dab3c; 
+    
+    
+}
+.email{
+    display: inline-block;
+    margin-top: 13px;
+    
+}
+.timer{
+    display: inline-block;
+    margin-top: 13px;
+    
+}
+.location{
+    display: inline-block;
+    margin-top: 13 px;
+    padding-left: 10px;
+    
+}
+.titles{
+    height: 45px;
+    background-color:#6dab3c;
+    
+}
+.homeTitles{
+    margin-left:130px;
+    padding-top: 14px;
+    display: inline-block;
+    
+}
+.HOME{
+    color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 13.5px;
+     height: 58px;
+     padding: 15px;
+     
+}
+.HOME:hover{
+    background-color: #246eb9;
+}
+
+.BOOKAPPOINTMENTref{
+    color: white;
+    text-decoration: none;
+    margin-left: 200px;
+    background-color: #246eb9;
+     font-weight: bold;
+     padding: 13.5px;
+     
+}
+.aboutUsMiddle{
+    background-color: #246eb9;
+    margin-top: 0px;
+    padding: 20px;
+    height: 140px;
+}
+.aboutUs{
+    color: white;
+    margin-left:  130px;
+}
+.about{
+    background-color: #6dab3c;
+    margin-left: 120px;
+    width: 350px;
+    padding-left:  25px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.middle{
+    display: inline-flex;
+    background-color: #f5f8fb;
+    width: 100%;
+    height: 1100px;
+    line-height :26px ;
+}
+.img5{
+    margin-left: 140px;
+    margin-top: 100px;
+}
+.leftParameters{
+    width: 510px;
+    margin-left: 120px;
+    padding: 20px;
+}
+.text1,text2{
+    padding: 5px;
+
+}
+.greenWords{
+    color: #55cc00;
+    font-weight: bolder;
+}
+.check{
+    background-color:   chocolate;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 35px;
+    border-radius: 8px;
+    font-size: 17px;
+    
+}
+.classref{
+    text-decoration: none;
+    color: white;
+}
+.right{
+    margin-top: 80px;
+    width: 510px;
+    margin-left: 55px; 
+}
+.blueTalk{
+    background-color: #265586;
+    padding: 36px;
+    color: white;
+    margin-bottom-top: 20px;
+}
+.hTitle{
+    margin-left: 120px;
+    padding: 30px;
+}
+.middlePics{
+    display: inline-flex;
+    line-height :23px ;
+}
+.firstLeft{
+    width: 220px;
+    margin-left: 150px;
+}
+.Sportsphysical{
+    color: rgb(228, 100, 9);
+}
+.Orthopedic{
+    color: rgb(228, 100, 9);
+}
+.OrthopedicPhysical{
+    color: rgb(228, 100, 9);
+}
+
+.secondLeft{
+    width: 220px;
+    margin-left: 43px;
+}
+.thirdleft{
+    width: 220px;
+    margin-left: 43px;
+}
+.readMore1{
+text-decoration: none;
+padding: 10px;
+background-color: #f5f8fb;
+width: 150px;
+color: black;
+
+}
+.readMore2{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f5f8fb;
+    width: 150px;
+    color: black;
+    
+    }
+.readMore3{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f5f8fb;
+    width: 150px;
+    color: black;
+    
+    }
+.rightleft{
+    width: 230px;
+    background-color: #f5f8fb;
+    padding: 30px;
+    margin-left: 43px;
+    line-height: 27px;
+    
+    
+}
+.appointment{
+    background-color: #6dab3c;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+
+}
+.appointment1{
+    margin-top: 70px;
+    text-align: center;
+   
+
+}
+.h2left{
+    font-size: 27.6px;
+    padding-bottom: 20px;
+    line-height: 35px;
+}
+.rightleftgreen{
+    background-color: #6dab3c;
+    width: 230px;
+    padding: 30px;
+    margin-left: 43px;
+    color: white;
+    line-height: 25px;
+}
+.appointment3{
+    background-color: white;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+
+}
+.appointment2{
+    margin-top: 60px;
+    text-align: center;
+}
+.successDetails{
+    display: inline-flex;
+}
+.success{
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+.img12{
+    margin-left: 150px;
+    padding-top: 17px;
+}
+.rightsuccessDetails{
+    width: 500px;
+    margin-left: 30px;
+}
+.boldrighttalk{
+    background-color: #246eb9;
+    color: white;
+    padding: 17px;
+}
+.boldrighttalkmiddle{
+    font-size: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 22px;
+    line-height: 23px;
+
+}
+.allreviews{
+    background-color: #f5f8fb;
+    height:450px;
+    margin-top: 50px;
+}
+.reviews{
+    display: inline-flex;
+    margin-left: 120px;
+    margin-top: 30px;
+
+}
+.Customertestimonials{
+    background-color:  #6dab3c;
+    text-align: center;
+    width: 440px;
+    color: white;
+  padding: 10px;
+    margin-left: 450px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.allhillarytalk{
+    width: 350px;
+    margin-left: 30px;
+    
+}
+.hillarytalk{
+    background: white;
+    padding: 15px;
+    margin-top: 0px;
+
+}
+.hillary{
+    font-family: Freestyle Script;
+
+}
+.partners{
+    display: inline-flex;
+    margin: 40px;
+}
+.ourpartners{
+    padding: 10px;
+    margin-left: 110px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.img16{
+    margin-left: 190px;
+}
+.bottomfeild{
+    background-color:#083d77; 
+    display: inline-flex;
+    color: white;
+    height: 350px;
+    width: 100%;
+}
+.leftbottomfeild{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.emailfield{
+    padding: 8px;
+    background-color: #083d77; 
+    border: 1px solid white;
+
+}
+.Subscribe{
+    background-color: rgb(235, 181, 46);
+    padding: 8px;
+    border: 2px solid rgb(235, 181, 46);
+    font-weight: 700;
+}
+.Subscribe:hover{
+    background-color: rgb(255, 216, 117)
+}
+input{
+    padding: 7px;
+    margin: 5px;
+    border-radius: 4px;
+}
+.Categories{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.Recentposts{
+    width: 340px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.lowtalk{
+    font-size: 14px;
+    line-height: 22px;
+    
+}
+.copyright{
+    text-align: center;
+    font-size: 10px;
+    padding: 12px;
+    
+    color: white;
+    background-color: rgb(39, 39, 39);
+   
+}
+
