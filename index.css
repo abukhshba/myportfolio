@@ -11,7 +11,7 @@
 header {
 
 
-    background-color: rgb(116, 117, 117);
+    background-color: rgb(109, 109, 109);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -33,22 +33,22 @@ header {
 .navigation a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 900px;
+    font-weight: 600;
+    font-size: 1.2em;
     padding-left: 30px;
     transition: 0.4s ease;
 
 }
 
 .navigation a:hover {
-    color: #ff0000;
+    color: blue;
     transform: scale(1.5);
     font-weight: 1000px;
 
 }
 
 section {
-    padding: 100px 200px;
+    padding: 120px 200px;
 }
 
 .main {
@@ -56,21 +56,23 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(project-images/14.jpg) no-repeat;
+    background: url(project-images/14.jpg);
     background-size: cover;
+
     background-attachment: fixed;
 }
 
 .main h2 {
     color: rgb(255, 255, 255);
     font-size: 1.6em;
+    margin-top: 20px;
     font-weight: 700;
 }
 
 .main h2 span {
     display: inline-block;
-    margin-top: 10px;
-    color: crimson;
+    margin: 3px;
+    color: rgb(189, 30, 30);
     font-size: 3em;
     font-weight: 900px;
 }
@@ -100,7 +102,7 @@ section {
 }
 
 .mainbutton:hover {
-    background-color: rgb(44, 44, 138);
+    background-color: rgb(42, 42, 143);
     transform: scale(1.1);
 }
 
@@ -153,6 +155,10 @@ section {
 
 }
 
+.cardbellow:hover {
+    transform: scale(1.1);
+}
+
 .icon {
     color: blue;
     font-size: 8em;
@@ -184,7 +190,7 @@ section {
     border-radius: 10px;
     margin: 20px;
     min-height: 14em;
-    width: 23em;
+    width: 25em;
     overflow: hidden;
     transition: 0.7s ease;
 }
