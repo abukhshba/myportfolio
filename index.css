@@ -145,7 +145,7 @@ section {
     box-shadow: 0 5px 25px rgba(1 1 1 /25%);
     border-radius: 10px;
     padding: 25px;
-    margin: 15px;
+    margin: 20px;
     transition: 0.7s ease;
 
 }
@@ -190,7 +190,7 @@ section {
     border-radius: 10px;
     margin: 20px;
     min-height: 14em;
-    width: 25em;
+    width: 23em;
     overflow: hidden;
     transition: 0.7s ease;
 }
