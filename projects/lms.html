@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System | Mahmoud Abukhashaba</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-bgMain text-textMain font-sans antialiased selection:bg-accent selection:text-white">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-bgMain/90 backdrop-blur-md border-b border-borderMain transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl font-bold tracking-tight text-primary">Mahmoud.</a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="../index.html#projects" class="hover:text-accent transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="pt-32 pb-20 px-6 bg-bgSecondary border-b border-borderMain">
+            <div class="max-w-4xl mx-auto text-center slide-up">
+                <p class="text-accent font-semibold mb-4 tracking-wide text-sm uppercase">Case Study</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6">Learning Management</h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Educational Platform Infrastructure</p>
+                
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Laravel</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">REST APIs</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">MySQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="py-20 px-6">
+            <div class="max-w-4xl mx-auto space-y-20">
+                
+                <!-- Overview -->
+                <div class="slide-up">
+                    <h2 class="text-3xl font-bold text-primary mb-6">Overview</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Drawing on experience from contributing to over four distinct Learning Management Systems (LMS), these platforms are engineered to handle vast amounts of multimedia content, real-time student tracking, and live session integrations.</p>
+                </div>
+
+                <!-- Features -->
+                <div class="slide-up">
+                    <h2 class="text-2xl font-bold text-primary mb-6">Core LMS Architecture Features</h2>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Streaming & Content</h4>
+                            <p class="text-sm text-gray-600">Secure video streaming integration and document delivery architectures.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Assessment Engine</h4>
+                            <p class="text-sm text-gray-600">Dynamic quiz generation, automated grading, and real-time progress tracking.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Certification</h4>
+                            <p class="text-sm text-gray-600">Automated generation of verifiable PDF certificates upon course completion.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p class="text-gray-400">&copy; 2026 Mahmoud Abukhashaba. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

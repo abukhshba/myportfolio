@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongo ERP - Resource Planning System | Mahmoud Abukhashaba</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-bgMain text-textMain font-sans antialiased selection:bg-accent selection:text-white">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-bgMain/90 backdrop-blur-md border-b border-borderMain transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl font-bold tracking-tight text-primary">Mahmoud.</a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="../index.html#projects" class="hover:text-accent transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="pt-32 pb-20 px-6 bg-bgSecondary border-b border-borderMain">
+            <div class="max-w-4xl mx-auto text-center slide-up">
+                <p class="text-accent font-semibold mb-4 tracking-wide text-sm uppercase">Case Study</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6">Buongo ERP</h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Enterprise Resource Planning System</p>
+                
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Laravel</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Filament</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">REST APIs</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">MySQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="py-20 px-6">
+            <div class="max-w-4xl mx-auto space-y-20">
+                
+                <!-- Overview -->
+                <div class="slide-up">
+                    <h2 class="text-3xl font-bold text-primary mb-6">Overview</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Buongo ERP is a large-scale, enterprise-grade resource planning platform designed to centralize and automate complex business operations. It acts as the backbone for organizational processes, integrating multiple departments into a single, cohesive system.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 slide-up">
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary mb-6">Business Problem</h2>
+                        <p class="text-gray-600 leading-relaxed">The organization was struggling with data silos across isolated systems for HR, Finance, and Sales. They needed a unified, highly secure, and permission-driven platform that could handle thousands of daily transactions and provide real-time analytics.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary mb-6">My Role</h2>
+                        <p class="text-gray-600 leading-relaxed">I led the backend architecture and development, designing a modular monolithic system. I implemented complex role-based access control (RBAC), developed the accounting core, and built REST APIs for external system integrations.</p>
+                    </div>
+                </div>
+
+                <!-- Key Modules -->
+                <div class="slide-up">
+                    <h2 class="text-3xl font-bold text-primary mb-8">Main Modules</h2>
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-bgSecondary p-5 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary">Accounting & Finance</h4>
+                            <p class="text-sm text-gray-500 mt-1">General Ledger & Cash</p>
+                        </div>
+                        <div class="bg-bgSecondary p-5 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary">Human Resources</h4>
+                            <p class="text-sm text-gray-500 mt-1">Recruitment & Payroll</p>
+                        </div>
+                        <div class="bg-bgSecondary p-5 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary">Inventory</h4>
+                            <p class="text-sm text-gray-500 mt-1">Stock & Purchasing</p>
+                        </div>
+                        <div class="bg-bgSecondary p-5 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary">Sales & CRM</h4>
+                            <p class="text-sm text-gray-500 mt-1">Clients & Deals Management</p>
+                        </div>
+                        <div class="bg-bgSecondary p-5 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary">Analytics</h4>
+                            <p class="text-sm text-gray-500 mt-1">Real-time Custom Reports</p>
+                        </div>
+                        <div class="bg-bgSecondary p-5 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary">Security</h4>
+                            <p class="text-sm text-gray-500 mt-1">Granular Permissions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture & Challenges -->
+                <div class="slide-up bg-primary text-white p-10 md:p-14 rounded-3xl">
+                    <h2 class="text-3xl font-bold mb-8">Technical Challenges & Solutions</h2>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-accent mb-3">Challenge: Financial Ledger Integrity</h3>
+                            <p class="text-gray-300 leading-relaxed">Ensuring 100% accuracy and ACID compliance for high-frequency double-entry accounting transactions across concurrent users.</p>
+                        </div>
+                        <div class="pl-6 border-l-2 border-accent">
+                            <h3 class="text-xl font-bold mb-3">Solution</h3>
+                            <p class="text-gray-300 leading-relaxed">Implemented rigorous database transactions, row-level locking (Pessimistic Locking), and a specialized event-driven architecture using Laravel Queues to safely process financial entries asynchronously without blocking the UI.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p class="text-gray-400">&copy; 2026 Mahmoud Abukhashaba. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

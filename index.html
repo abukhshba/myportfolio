@@ -1,302 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
-    <title>Mahmoud Abukhashaba</title>
+    <title>Mahmoud Abukhashaba - Senior Web Developer</title>
+    <meta name="description" content="Portfolio of Mahmoud Abukhashaba, a Senior Web Developer specializing in scalable web applications, ERP systems, and REST APIs.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mahmoud Abukhashaba - Senior Web  Developer">
+    <meta property="og:description" content="Building scalable web applications, ERP systems, SaaS platforms, REST APIs, and E-Commerce solutions with Laravel.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Schema.org Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mahmoud Abukhashaba",
+      "jobTitle": "Senior Web Developer",
+      "url": "https://abukhshba.github.io/"
+    }
+    </script>
 </head>
-
-<body>
-    <header>
-        <a href="#" class="logo">Abukhashaba</a>
-        <nav class="navigation">
-            <a href="#services">SKILLS</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
+<body class="bg-bgMain text-textMain font-sans antialiased selection:bg-accent selection:text-white">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-bgMain/90 backdrop-blur-md border-b border-borderMain transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-tight text-primary">Mahmoud.</a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-accent transition-colors">About</a>
+                <a href="#experience" class="hover:text-accent transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+                <a href="#services" class="hover:text-accent transition-colors">Services</a>
+                <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">
+                Let's Talk
+            </a>
+            <button class="md:hidden text-textMain hover:text-primary p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
     </header>
 
-    <section class="main">
-        <di>
-            <h2> Hello I'm Mahmoud Abukhashaba<br><span>PHP Web Developer</span></h2>
-            <h3>I aim to develop myself and become <br> a professional web developer</h3>
-            <a href="#projects" class="mainbutton">Veiw My Work</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mahmoud-abukhashaba-7621b6119/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/abukhshba"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/mahmoudabukhashaba"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://wa.me/+201013367402"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </di>
-    </section>
-
-    <section class="cards" id="services">
-        <h2 class="title">SKILLS</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-php"></i>
-                </div>
-                <div class="info">
-                    <h3>PHP</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="info">
-                    <h3>MySQL</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-code-compare"></i>
-                </div>
-                <div class="info">
-                    <h3>OOP</h3>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="pt-28 lg:pt-40 pb-12 md:pb-20 px-6 min-h-screen flex items-center">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="fade-in">
+                    <p class="text-accent font-semibold mb-4 tracking-wide text-sm uppercase">Senior Web Developer</p>
+                    <h1 class="text-5xl md:text-7xl font-bold text-primary leading-tight mb-6">
+                        Mahmoud<br>Abukhashaba
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 md:mb-10 max-w-xl leading-relaxed">
+                        Building scalable web applications, ERP systems, SaaS platforms, REST APIs, and E-Commerce solutions with Laravel.
                     </p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <a href="#projects" class="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-lg shadow-primary/20">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 bg-white text-primary border border-borderMain font-medium rounded-lg hover:bg-bgSecondary transition-all hover:-translate-y-0.5">
+                            Contact Me
+                        </a>
+                        <!-- Download CV link to be updated -->
+                        <a href="cv/MahmoudAbukhashaba.pdf" target="_blank" download class="w-full md:w-auto inline-flex items-center justify-center px-8 py-4 text-textMain font-medium border border-green-500 rounded-lg hover:text-green-600 transition-colors group">
+                            Preview CV 
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block slide-up">
+                    <div class="relative w-full aspect-square bg-bgSecondary rounded-[2rem] border border-borderMain overflow-hidden flex items-center justify-center p-8">
+                        <div class="absolute inset-0 bg-gradient-to-br from-bgSecondary to-white opacity-50"></div>
+                        <div class="relative w-full h-full bg-[#111827] rounded-xl shadow-2xl p-8 flex flex-col justify-center text-sm font-mono text-gray-300 leading-relaxed border border-gray-800">
+                            <div class="flex gap-2 mb-6 absolute top-6 left-6">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                            <p class="mt-4"><span class="text-accent">class</span> <span class="text-yellow-400">MahmoudAbukhashaba</span> <span class="text-accent">extends</span> <span class="text-green-400">Developer</span> {</p>
+                            <p class="ml-4 mt-2"><span class="text-accent">public</span> <span class="text-accent">function</span> <span class="text-yellow-400">__construct</span>() {</p>
+                            <p class="ml-8"><span class="text-accent">$this</span>-><span class="text-blue-300">stack</span> = [<span class="text-orange-300">'Laravel'</span>, <span class="text-orange-300">'PHP'</span>, <span class="text-orange-300">'MySQL'</span>];</p>
+                            <p class="ml-8"><span class="text-accent">$this</span>-><span class="text-blue-300">focus</span> = <span class="text-orange-300">'Clean Architecture'</span>;</p>
+                            <p class="ml-4">}</p>
+                            <p class="ml-4 mt-2"><span class="text-accent">public</span> <span class="text-accent">function</span> <span class="text-yellow-400">build</span>() {</p>
+                            <p class="ml-8"><span class="text-pink-400">return</span> <span class="text-accent">new</span> <span class="text-yellow-400">ScalableSystem</span>();</p>
+                            <p class="ml-4">}</p>
+                            <p>}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fab fa-laravel"></i>
-                </div>
-                <div class="info">
-                    <h3>Laravel</h3>
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-code"></i>
-                 </div>
-                <div class="info">
-                    <h3>HTML & HTML5</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div class="info">
-                    <h3>CSS & CSS3</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-bootstrap"></i>
-                </div>
-                <div class="info">
-                    <h3>BOOTSRTAP</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <div class="info">
-                    <h3>JAVA SCRIPT</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
+        </section>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/lumi.JPG" />
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 px-6 bg-bgSecondary">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div class="slide-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8">Engineering Robust Backend Solutions</h2>
+                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+                        <p>With over 4 years of dedicated experience in backend development, I specialize in crafting high-performance, scalable systems using Laravel and PHP.</p>
+                        <p>My expertise spans across designing complex database schemas, building REST and GraphQL APIs, and developing Multi-Tenant SaaS applications and Enterprise Resource Planning (ERP) systems from the ground up.</p>
+                        <p>I am passionate about Clean Architecture, continuous performance optimization, and ensuring code quality through rigorous code reviews and problem-solving methodologies.</p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Wedding and Soiree Dresses Store</p>
-                    <strong class="project-title">
-                        <span>Luminelle Dresses store (working on)</span>
-                        <!-- <a href="#" class="more-details">More details</a> -->
-                    </strong>
+                <div class="slide-up grid grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-2xl border border-borderMain shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-5xl font-bold text-accent mb-2">4+</h3>
+                        <p class="text-gray-600 font-medium">Years Experience</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-borderMain shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-5xl font-bold text-accent mb-2">15+</h3>
+                        <p class="text-gray-600 font-medium">Enterprise Projects</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-borderMain shadow-sm col-span-2 hover:shadow-md transition-shadow">
+                        <h3 class="font-bold text-primary mb-6 text-xl">Core Competencies</h3>
+                        <div class="flex flex-wrap gap-3 text-sm font-medium text-gray-700">
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">Clean Architecture</span>
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">REST & GraphQL APIs</span>
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">Database Design</span>
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">Multi-Tenant Systems</span>
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">Performance Optimization</span>
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">SaaS Applications</span>
+                            <span class="px-4 py-2 bg-bgSecondary border border-borderMain rounded-lg">Problem Solving</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/elqima.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Educational platform for students and teachers</p>
-                    <strong class="project-title">
-                        <span>ElQima Application (Dashboard)</span>
-                        <!-- <a href="#" class="more-details">More details</a> -->
-                    </strong>
-                </div>
-            </div>
+        </section>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/blog.jpg" />
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 md:py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-8 md:mb-16 max-w-2xl slide-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Professional Experience</h2>
+                    <p class="text-lg text-gray-600">A track record of building complex enterprise systems and scaling web applications.</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">website for articles</p>
-                    <strong class="project-title">
-                        <span>BlogHub</span>
-                        <a href="https://github.com/abukhshba/ArticlesBlog" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/sfwar.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Educational platform for students and teachers</p>
-                    <strong class="project-title">
-                        <span>SFWAR Application (Dashboard)</span>
-                        <!-- <a href="https://github.com/abukhshba/ArticlesBlog" class="more-details">More details</a> -->
-                    </strong>
-                </div>
-            </div>
+                
+                <div class="space-y-8 md:space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-borderMain">
+                    
+                    <!-- Codetoon -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active slide-up">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-accent text-white absolute left-0 md:left-1/2 -translate-x-1/2 z-10 shadow">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="w-full pl-16 md:w-1/2 md:pl-0 md:pr-12 md:odd:pl-12 md:odd:pr-0">
+                            <div class="bg-white p-8 rounded-2xl border border-borderMain shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
+                                    <h3 class="text-2xl font-bold text-primary">Backend Developer</h3>
+                                    <span class="inline-block px-3 py-1 bg-blue-50 text-accent text-sm font-semibold rounded-full whitespace-nowrap">June 2023 — Present</span>
+                                </div>
+                                <h4 class="text-lg font-medium text-gray-600 mb-6">Codetoon</h4>
+                                <ul class="grid sm:grid-cols-2 gap-y-3 gap-x-4 text-gray-600">
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>ERP, CRM, PMS & LMS Development</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>REST & GraphQL APIs</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Database Design & Query Optimization</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Performance Optimization</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>ETA Integration</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Code Review</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Filament Admin Panels</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-accent mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Multi Tenant & SaaS Platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/kian.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Educational platform for students and teachers</p>
-                    <strong class="project-title">
-                        <span>Kian ElAwael Application(Dashboard)</span>
-                        <!-- <a href="#" class="more-details">More details</a> -->
-                    </strong>
+                    <!-- Droos Live -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active slide-up">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-gray-300 text-gray-700 absolute left-0 md:left-1/2 -translate-x-1/2 z-10">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="w-full pl-16 md:w-1/2 md:pl-0 md:pr-12 md:odd:pl-12 md:odd:pr-0">
+                            <div class="bg-white p-8 rounded-2xl border border-borderMain shadow-sm hover:shadow-md transition-all">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-2">
+                                    <h3 class="text-2xl font-bold text-primary">Laravel Backend Developer</h3>
+                                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-sm font-semibold rounded-full whitespace-nowrap">January 2023 — June 2023</span>
+                                </div>
+                                <h4 class="text-lg font-medium text-gray-600 mb-6">Droos Live</h4>
+                                <ul class="grid sm:grid-cols-2 gap-y-3 gap-x-4 text-gray-600">
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-gray-400 mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>LMS Development</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-gray-400 mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>REST APIs</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-gray-400 mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Database Design</li>
+                                    <li class="flex items-start"><svg class="w-5 h-5 text-gray-400 mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feature Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-           
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24 px-6 bg-bgSecondary border-y border-borderMain">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-8 md:mb-16 text-center max-w-2xl mx-auto slide-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Technical Arsenal</h2>
+                    <p class="text-lg text-gray-600">A comprehensive suite of tools and technologies I use to build production-ready software.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Backend -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-borderMain slide-up">
+                        <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-6">Backend</h3>
+                        <ul class="space-y-3 text-gray-600 font-medium">
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Filament</li>
+                            <li>REST APIs & GraphQL</li>
+                            <li>Laravel Sanctum</li>
+                            <li>Auth & Authorization</li>
+                            <li>MySQL</li>
+                            <li>Query Optimization</li>
+                            <li>Database Design</li>
+                            <li>Queues & Scheduler</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Architecture -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-borderMain slide-up" style="transition-delay: 100ms;">
+                        <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-6">Architecture</h3>
+                        <ul class="space-y-3 text-gray-600 font-medium">
+                            <li>SOLID Principles</li>
+                            <li>Repository Pattern</li>
+                            <li>Service Pattern</li>
+                            <li>Dependency Injection</li>
+                            <li>Service Container</li>
+                            <li>Multi Tenant</li>
+                            <li>SaaS Architecture</li>
+                        </ul>
+                    </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/tafouq.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Educational platform for students and teachers</p>
-                    <strong class="project-title">
-                        <span>ElTafawq Application(Dashboard)</span>
-                        <!-- <a href="#" class="more-details">More details</a> -->
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/midway.jpg" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Educational platform for univercity students and professors</p>
-                    <strong class="project-title">
-                        <span>Midway Application(Dashboard)</span>
-                        <!-- <a href="#" class="more-details">More details</a> -->
-                    </strong>
-                </div>
-            </div>
+                    <!-- Frontend -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-borderMain slide-up" style="transition-delay: 200ms;">
+                        <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-6">Frontend</h3>
+                        <ul class="space-y-3 text-gray-600 font-medium">
+                            <li>HTML5 & CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>JavaScript</li>
+                            <li>Blade</li>
+                        </ul>
+                    </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/5.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Website of Travel Agency</p>
-                    <p class="project-category"> HTML & CSS & Bootstrap & PHP & MySQL</p>
-                    <strong class="project-title">
-                        <span>Travel Website</span>
-                        <a href="https://github.com/abukhshba/TravelAgency" class="more-details">More details</a>
-                    </strong>
+                    <!-- Tools -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-borderMain slide-up" style="transition-delay: 300ms;">
+                        <div class="w-12 h-12 bg-blue-50 text-accent rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-6">Tools</h3>
+                        <ul class="space-y-3 text-gray-600 font-medium">
+                            <li>Git, GitHub, Bitbucket</li>
+                            <li>SourceTree, GitHub Desktop</li>
+                            <li>Composer, NPM</li>
+                            <li>Postman</li>
+                            <li>Docker & Linux</li>
+                            <li>Pest Testing</li>
+                            <li>Code Review</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            
+        <!-- Featured Projects Section -->
+        <section id="projects" class="py-16 md:py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-6 slide-up">
+                    <div class="max-w-2xl">
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+                        <p class="text-lg text-gray-600">A selection of enterprise platforms, SaaS products, and specialized systems I have built.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+                    <!-- Shoply -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Shoply</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Modern Laravel E-Commerce Platform</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">A comprehensive e-commerce platform featuring inventory, orders, coupons, guest checkout, and SEO tools.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">HTML</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Tailwind</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/shoply.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                                <a href="https://shoplyeg.com" target="_blank" class="flex-1 text-center py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/1.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Website of Production of media materials </p>
-                    <p class="project-category">HTML & CSS only</p>
-                    <strong class="project-title">
-                        <span>Media Website</span>
-                        <a href="website/web 1/index.html" class="more-details">More details</a>
-                    </strong>
+                    <!-- Buongo ERP -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 100ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Buongo ERP</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Enterprise Resource Planning System</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Large-scale ERP platform with integrated business modules including Accounting, HR, CRM, Inventory, and Egyptian ETA Integration.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">GraphQL</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/buongo-erp.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                                <a href="https://buongo.com" target="_blank" class="flex-1 text-center py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Enterprise CRM -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 200ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Enterprise CRM Platform</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Customer Relationship Management</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Complete CRM with HR, organization management, attendance, payroll, and marketing campaigns.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">GraphQL</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/enterprise-crm.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Egypt Best Properties -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Egypt Best Properties</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Property Management System</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Extensive PMS tracking properties, developers, units, offers, and lead management with admin dashboard.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Tailwind</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/ebp.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                                <a href="https://egyptbestproperties.com" target="_blank" class="flex-1 text-center py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ALMISK -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 100ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">ALMISK</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Corporate Website</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Responsive corporate presence featuring product catalogs, crop solutions, and highly optimized SEO.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Tailwind</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">HTML</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/almisk.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                                <a href="https://almisk.shoplyeg.com" target="_blank" class="flex-1 text-center py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LMS -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 200ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Learning Management</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Educational Platforms</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Developed and contributed to over 4 LMS platforms with APIs, live sessions, quizzes, and certificates.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">REST APIs</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/lms.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Linez CRM -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 100ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Linez CRM</h3>
+                            <p class="text-sm font-medium text-accent mb-4">CRM for Interior Design</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Comprehensive CRM handling clients, projects, contracts, quotations, and task management.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">HTML</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Tailwind</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/linez-crm.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Etisal -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Etisal</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Sales Reps Management</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">A dedicated system for managing representatives, customer visits, and performance tracking.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">GraphQL</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/etisal.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Codetoon Website -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 100ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Codetoon Website</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Corporate Website</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Corporate web presence featuring services, portfolio, careers, and an integrated blog.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">HTML</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Tailwind</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/codetoon.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                                <a href="https://codetoon.net" target="_blank" class="flex-1 text-center py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Real Estate Landing Pages -->
+                    <article class="bg-white rounded-2xl border border-borderMain overflow-hidden shadow-sm hover:shadow-xl transition-all group slide-up flex flex-col h-full" style="transition-delay: 200ms;">
+                        
+                        <div class="p-4 md:p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Real Estate Landing Pages</h3>
+                            <p class="text-sm font-medium text-accent mb-4">Lead Generation</p>
+                            <p class="text-gray-600 mb-6 flex-1 text-sm line-clamp-3">Developed over 12 responsive landing pages focused entirely on lead generation and high conversion rates.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">HTML5</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">CSS3</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">JS</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Tailwind</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">PHP</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Laravel</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">Filament</span>
+                                <span class="px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold rounded-md">MySQL</span>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <a href="projects/real-estate.html" class="flex-1 text-center py-2.5 bg-white text-primary border border-borderMain text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors">More Details</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/2.png" />
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 px-6 bg-primary text-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-8 md:mb-16 text-center max-w-2xl mx-auto slide-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Specialized Services</h2>
+                    <p class="text-gray-300 text-lg">Delivering robust, scalable, and high-performance backend solutions for enterprise needs.</p>
                 </div>
-                <div class="project-info">
-                    <p class="project-category">Website of Medical Group </p>
-                    <p class="project-category"> HTML & CSS only</p>
-                    <strong class="project-title">
-                        <span>Medical Website</span>
-                        <a href="website/web 2/index.html" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-images/4.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Website of Fantasy Game [login page] </p>
-                    <p class="project-category"> HTML & CSS only</p>
-                    <strong class="project-title">
-                        <span>Fantasy Website</span>
-                        <a href="fantazy/welcome.html" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="cardbellow">
-                <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+201013367402</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors slide-up">
+                        <h3 class="text-xl font-bold mb-3">ERP & CRM Systems</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Developing tailored, large-scale Enterprise Resource Planning and Customer Relationship Management platforms.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors slide-up" style="transition-delay: 50ms;">
+                        <h3 class="text-xl font-bold mb-3">REST & GraphQL APIs</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Designing secure, fast, and documented APIs to power mobile apps, SPAs, and third-party integrations.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors slide-up" style="transition-delay: 100ms;">
+                        <h3 class="text-xl font-bold mb-3">SaaS & Multi-Tenant</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Architecting robust multi-tenant applications with isolated databases and optimized resource sharing.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors slide-up">
+                        <h3 class="text-xl font-bold mb-3">E-Commerce & PMS</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Building feature-rich property management systems and modern, high-conversion e-commerce platforms.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors slide-up" style="transition-delay: 50ms;">
+                        <h3 class="text-xl font-bold mb-3">Performance & DB Design</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Optimizing queries, indexing complex data, and restructuring databases for maximum efficiency.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors slide-up" style="transition-delay: 100ms;">
+                        <h3 class="text-xl font-bold mb-3">Third-party Integrations</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Seamlessly integrating with payment gateways, electronic invoicing (ETA), SMS providers, and external APIs.</p>
+                    </div>
                 </div>
             </div>
-            <div class="cardbellow">
-                <div class="icon">
-                    <i class="fa-regular fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>abukhshba77@gmail.com</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 px-6 bg-bgSecondary">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 md:p-16 border border-borderMain shadow-xl slide-up text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-5xl font-bold text-primary mb-6">Let's Build Something Great</h2>
+                    <p class="text-xl text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto">Available for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+                        <a href="mailto:abukhshba77@gmail.com" class="w-full md:w-auto inline-flex justify-center items-center px-4 sm:px-8 py-4 text-sm sm:text-base bg-primary text-white font-medium rounded-xl hover:bg-primary/90 transition-transform hover:-translate-y-1 shadow-lg shadow-primary/20">
+                            <svg class="w-5 h-5 mr-2 sm:mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>abukhshba77@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/+201013367402" class="w-full md:w-auto inline-flex justify-center items-center px-4 sm:px-8 py-4 text-sm sm:text-base bg-[#25D366] text-white font-medium rounded-xl hover:bg-[#20bd5a] transition-transform hover:-translate-y-1 shadow-lg shadow-[#25D366]/20">
+                            <svg class="w-5 h-5 mr-3 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-8 border-t border-borderMain pt-8">
+                        <a href="https://www.linkedin.com/in/mahmoudabukhashaba" class="text-gray-500 hover:text-accent font-medium transition-colors whitespace-nowrap">LinkedIn</a>
+                        <a href="https://github.com/abukhshba" class="text-gray-500 hover:text-accent font-medium transition-colors whitespace-nowrap">GitHub</a>
+                        <a href="cv/MahmoudAbukhashaba.pdf" target="_blank" download class="text-gray-500 hover:text-accent font-medium transition-colors whitespace-nowrap">Preview CV</a>
+                    </div>
                 </div>
             </div>
-            <div class="cardbellow">
-                <div class="icon">
-                    <i class="fa-sharp fa-solid fa-link"></i>
-                </div>
-                <div class="info">
-                    <h3>Resume</h3>
-                    <a href="https://drive.google.com/file/d/1BMogw67x8kGBouHEMrvQlLR6tQ1FvPAM/view?usp=sharing" class="cv"> Download</a>
-                </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <span class="font-bold text-lg">Mahmoud.</span>
+                <span class="text-gray-400">|</span>
+                <span class="text-gray-400">Laravel Backend Developer</span>
             </div>
-    </section>
-    <footer class="footer">
-        <p class="footer-title">Copyrights @ <span>Mahmoud Abukhashaba</span></p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/mahmoud-abukhashaba-7621b6119/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/abukhshba"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/mahmoudabukhashaba"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://wa.me/+201013367402"><i class="fa-brands fa-whatsapp"></i></a>
+            <p class="text-gray-400">&copy; 2026 Mahmoud Abukhashaba. Crafted with precision.</p>
         </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
