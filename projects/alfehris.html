@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js')</script>
+    <title>Alfehris - Industrial Factory Directory & Ads Platform | Mahmoud Abukhashaba</title>
+    <meta name="description" content="Case study: Alfehris, a bilingual industry & trade directory of verified factories across the Middle East, with a keyword-bid sponsored search auction.">
+
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-bgMain text-textMain font-sans antialiased selection:bg-accent selection:text-white">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-bgMain/90 backdrop-blur-md border-b border-borderMain transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="text-2xl font-bold tracking-tight text-primary">Mahmoud.</a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="../index.html#projects" class="hover:text-accent transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Portfolio
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="pt-32 pb-20 px-6 bg-bgSecondary border-b border-borderMain">
+            <div class="max-w-4xl mx-auto text-center slide-up">
+                <p class="text-accent font-semibold mb-4 tracking-wide text-sm uppercase">Case Study</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6">Alfehris</h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Industry &amp; Trade, Verified Across the Middle East</p>
+
+                <div class="flex flex-wrap justify-center gap-3 mb-10">
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Laravel 13</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">GraphQL (Lighthouse)</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Filament v5</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">MySQL</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Meilisearch</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Cloudflare R2</span>
+                    <span class="px-4 py-2 bg-white border border-borderMain text-gray-700 font-medium rounded-lg">Pest</span>
+                </div>
+
+                <a href="https://alfehris.com" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-all hover:-translate-y-0.5 shadow-lg shadow-primary/20">
+                    Visit alfehris.com
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="py-20 px-6">
+            <div class="max-w-4xl mx-auto space-y-20">
+
+                <!-- Overview -->
+                <div class="slide-up">
+                    <h2 class="text-3xl font-bold text-primary mb-6">Overview</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">Alfehris is a bilingual (Arabic / English) B2B directory that connects buyers with verified factories across the Middle East. Buyers search by product, sector and location. Factories manage their own profiles and can bid on keywords to appear as sponsored results. The Laravel backend is the single source of truth: it serves a Next.js web front end through a GraphQL API and runs two separate Filament panels, one for platform staff and one for factory owners.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 slide-up">
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary mb-6">Business Problem</h2>
+                        <p class="text-gray-600 leading-relaxed">Industrial buyers in the region had no reliable, searchable place to find verified manufacturers. The data was scattered, mostly in Arabic and inconsistently spelled. The platform also needed a revenue model that didn't hurt organic search quality: factories pay for visibility, and buyers can still trust what they see.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-primary mb-6">My Role</h2>
+                        <!-- TODO(Mahmoud): adjust this paragraph to describe exactly what you owned on this project. -->
+                        <p class="text-gray-600 leading-relaxed">As a Backend Engineer on the team, I worked on the Laravel backend: the GraphQL API, the Filament admin and factory panels, and the business logic behind search, the ads system and SEO.</p>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="slide-up">
+                    <h2 class="text-3xl font-bold text-primary mb-8">Key Features</h2>
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Keyword-Bid Ad Auction</h4>
+                            <p class="text-sm text-gray-600">Factories bid on keywords. Sponsored results are ranked by an auction, billed per click, tracked through signed redirect URLs and moderated by staff.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Multi-Tenant Factory Panel</h4>
+                            <p class="text-sm text-gray-600">Filament's native multi-tenancy scopes every factory, campaign and lead to the owning company. Platform staff use a separate admin panel.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Arabic-Aware Search</h4>
+                            <p class="text-sm text-gray-600">Normalized Arabic text (tashkeel, alef/hamza, taa marbuta) behind MySQL FULLTEXT, with a drop-in Meilisearch driver.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Programmatic SEO</h4>
+                            <p class="text-sm text-gray-600">Sector × location landing pages, SEO templates, structured data, sitemaps, slug redirects and indexability scoring.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">AI-Assisted Data Pipeline</h4>
+                            <p class="text-sm text-gray-600">Queued jobs use AI agents to classify factories into sectors and translate names. They also handle bulk CSV and media imports.</p>
+                        </div>
+                        <div class="bg-bgSecondary p-6 rounded-xl border border-borderMain">
+                            <h4 class="font-bold text-primary mb-2">Verification &amp; Leads</h4>
+                            <p class="text-sm text-gray-600">Factory applications, document-based verification, reviews, buyer inquiries and lead tracking, all with a full activity log.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture & Challenges -->
+                <div class="slide-up bg-primary text-white p-10 md:p-14 rounded-3xl">
+                    <h2 class="text-3xl font-bold mb-8">Technical Challenges &amp; Solutions</h2>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-accent mb-3">Challenge: One Backend, Many Clients</h3>
+                            <p class="text-gray-300 leading-relaxed">The web app (and a future Flutter mobile app) needed a stable contract. Meanwhile, staff and factory owners needed rich management screens that must never leak data across tenants.</p>
+                        </div>
+                        <div class="pl-6 border-l-2 border-accent">
+                            <h3 class="text-xl font-bold mb-3">Solution</h3>
+                            <p class="text-gray-300 leading-relaxed">A single GraphQL schema is the only public contract. Two Filament panels sit on top of the same Eloquent models, and the tenant is enforced at panel level. The company ID is denormalized onto factories, campaigns and leads so every resource scopes directly. Business rules live in thin resolvers backed by shared services, so search and the auction behave the same everywhere.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-accent mb-3">Challenge: Fair, Accurate Ad Billing</h3>
+                            <p class="text-gray-300 leading-relaxed">Pay-per-click billing has to be correct to the piastre and resistant to bot traffic, without slowing down search.</p>
+                        </div>
+                        <div class="pl-6 border-l-2 border-accent">
+                            <h3 class="text-xl font-bold mb-3">Solution</h3>
+                            <p class="text-gray-300 leading-relaxed">Money is stored as integer piastres everywhere. Clicks go through signed tracking URLs, and search-volume logging filters out bots before it feeds keyword pricing. The auction ranking is covered by Pest tests.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="slide-up text-center border-t border-borderMain pt-20">
+                    <h2 class="text-3xl font-bold text-primary mb-12">At a Glance</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div>
+                            <p class="text-4xl font-bold text-accent mb-2">2</p>
+                            <p class="text-gray-600 text-sm font-medium">Filament Panels (Admin &amp; Tenant)</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-accent mb-2">AR / EN</p>
+                            <p class="text-gray-600 text-sm font-medium">Fully Bilingual Content</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-accent mb-2">40+</p>
+                            <p class="text-gray-600 text-sm font-medium">Domain Models</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-accent mb-2">1</p>
+                            <p class="text-gray-600 text-sm font-medium">GraphQL Contract for Web &amp; Mobile</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 px-6 mt-12">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p class="text-gray-400">&copy; 2026 Mahmoud Abukhashaba. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,52 +1,91 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Intersection Observer for scroll animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.fade-in, .slide-up');
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        revealEls.forEach(el => observer.observe(el));
+    } else {
+        revealEls.forEach(el => el.classList.add('visible'));
+    }
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
+    // Header shadow once the page is scrolled
+    const header = document.getElementById('site-header');
+    if (header) {
+        const onScroll = () => header.classList.toggle('shadow-sm', window.scrollY > 8);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
+    // Highlight the nav link of the section in view
+    const navLinks = document.querySelectorAll('#desktop-nav a[href^="#"]');
+    if (navLinks.length && 'IntersectionObserver' in window) {
+        const linkFor = id => Array.from(navLinks).find(a => a.getAttribute('href') === `#${id}`);
+        const sectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                navLinks.forEach(a => { a.classList.remove('nav-active'); a.removeAttribute('aria-current'); });
+                const link = linkFor(entry.target.id);
+                if (link) { link.classList.add('nav-active'); link.setAttribute('aria-current', 'true'); }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        navLinks.forEach(a => {
+            const section = document.querySelector(a.getAttribute('href'));
+            if (section) sectionObserver.observe(section);
         });
-    }, observerOptions);
+    }
 
-    // Observe all elements with fade-in or slide-up classes
-    document.querySelectorAll('.fade-in, .slide-up').forEach((el) => {
-        observer.observe(el);
+    // Technical Arsenal: cursor spotlight on cards
+    document.querySelectorAll('.spotlight').forEach(card => {
+        card.addEventListener('pointermove', e => {
+            const r = card.getBoundingClientRect();
+            card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+            card.style.setProperty('--my', `${e.clientY - r.top}px`);
+        });
     });
 
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileCloseBtn = document.getElementById('mobile-close-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    
-    if (mobileMenuBtn && mobileMenu) {
-        let isMenuOpen = false;
+    // Technical Arsenal: duplicate the tool list once so the marquee loops seamlessly
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.marquee-track').forEach(track => {
+        if (reduceMotion) return;
+        Array.from(track.children).forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+        });
+    });
 
-        const toggleMenu = () => {
-            isMenuOpen = !isMenuOpen;
-            if (isMenuOpen) {
-                mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-                mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
-            } else {
-                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
-                mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
-            }
+    // Mobile menu
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('mobile-close-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (menuBtn && menu) {
+        let isOpen = false;
+
+        const setMenu = open => {
+            isOpen = open;
+            menu.classList.toggle('opacity-0', !open);
+            menu.classList.toggle('pointer-events-none', !open);
+            menu.classList.toggle('opacity-100', open);
+            menu.classList.toggle('pointer-events-auto', open);
+            menu.setAttribute('aria-hidden', String(!open));
+            menuBtn.setAttribute('aria-expanded', String(open));
+            document.body.classList.toggle('overflow-hidden', open);
+            if (open && closeBtn) closeBtn.focus();
+            if (!open) menuBtn.focus({ preventScroll: true });
         };
 
-        mobileMenuBtn.addEventListener('click', toggleMenu);
-        if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', toggleMenu);
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if(isMenuOpen) toggleMenu();
-            });
-        });
+        menuBtn.addEventListener('click', () => setMenu(!isOpen));
+        if (closeBtn) closeBtn.addEventListener('click', () => setMenu(false));
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && isOpen) setMenu(false); });
+        menu.querySelectorAll('.mobile-link').forEach(link =>
+            link.addEventListener('click', () => { if (isOpen) setMenu(false); })
+        );
     }
 });

@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./**/*.html",
+    "./index.html",
+    "./projects/**/*.html",
     "./assets/js/**/*.js"
   ],
   theme: {
@@ -13,9 +14,11 @@ module.exports = {
         bgMain: '#FFFFFF',
         bgSecondary: '#F9FAFB',
         borderMain: '#E5E7EB',
+        ink: '#0B1120',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       }
     },
   },
