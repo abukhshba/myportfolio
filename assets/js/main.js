@@ -41,26 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Technical Arsenal: cursor spotlight on cards
-    document.querySelectorAll('.spotlight').forEach(card => {
-        card.addEventListener('pointermove', e => {
-            const r = card.getBoundingClientRect();
-            card.style.setProperty('--mx', `${e.clientX - r.left}px`);
-            card.style.setProperty('--my', `${e.clientY - r.top}px`);
-        });
-    });
-
-    // Technical Arsenal: duplicate the tool list once so the marquee loops seamlessly
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    document.querySelectorAll('.marquee-track').forEach(track => {
-        if (reduceMotion) return;
-        Array.from(track.children).forEach(item => {
-            const clone = item.cloneNode(true);
-            clone.setAttribute('aria-hidden', 'true');
-            track.appendChild(clone);
-        });
-    });
-
     // Mobile menu
     const menuBtn = document.getElementById('mobile-menu-btn');
     const closeBtn = document.getElementById('mobile-close-btn');

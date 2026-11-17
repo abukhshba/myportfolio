@@ -243,170 +243,110 @@
 
         <!-- Skills Section -->
         <section id="skills" class="relative overflow-hidden py-20 md:py-28 px-6 bg-ink text-white isolate">
-            <!-- backdrop: blueprint grid + glow -->
             <div aria-hidden="true" class="absolute inset-0 -z-10 bg-blueprint [mask-image:radial-gradient(ellipse_80%_60%_at_50%_0%,#000_40%,transparent_100%)]"></div>
             <div aria-hidden="true" class="absolute -top-40 left-1/2 -translate-x-1/2 w-[56rem] h-[28rem] -z-10 rounded-full bg-accent/20 blur-[120px]"></div>
 
-            <div class="max-w-7xl mx-auto">
-                <div class="mb-12 md:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6 slide-up">
-                    <div class="max-w-2xl">
-                        <p class="font-mono text-sm text-sky-400 mb-4"><span class="text-gray-500">~/stack</span> $ ls --by-layer</p>
-                        <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Technical Arsenal</h2>
-                        <p class="text-lg text-gray-400">The tools I use to build production systems, grouped by the layer of the stack they serve.</p>
-                    </div>
-                    <div class="flex items-center gap-3 font-mono text-xs text-gray-400">
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>daily driver</span>
-                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>production use</span>
-                    </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12 md:mb-16 text-center max-w-2xl mx-auto slide-up">
+                    <p class="font-mono text-sm text-sky-400 mb-4">// tech stack</p>
+                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Technical Arsenal</h2>
+                    <p class="text-lg text-gray-400">The tools and technologies I use to build production-ready software.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-4 md:gap-5">
+                <div class="grid md:grid-cols-2 gap-5">
 
-                    <!-- Core backend -->
-                    <article class="spotlight md:col-span-6 lg:col-span-7 lg:row-span-2 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 flex flex-col slide-up">
-                        <div class="flex items-start justify-between gap-4 mb-6">
+                    <!-- Backend -->
+                    <article class="stack-card slide-up">
+                        <header class="stack-head">
                             <div>
-                                <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky-400 mb-2">01 · Core</p>
-                                <h3 class="text-2xl md:text-3xl font-bold">Backend Engineering</h3>
+                                <p class="stack-label">01 · Backend</p>
+                                <h3 class="stack-title">Backend &amp; Data</h3>
                             </div>
-                            <div class="flex gap-2 shrink-0">
-                                <span class="w-14 h-14 rounded-2xl bg-white/90 grid place-items-center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg" alt="Laravel" class="w-8 h-8" loading="lazy"></span>
-                                <span class="w-14 h-14 rounded-2xl bg-white/90 grid place-items-center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt="PHP" class="w-9 h-9" loading="lazy"></span>
+                            <div class="stack-logos">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg" alt="Laravel" loading="lazy">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt="PHP" loading="lazy">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy">
                             </div>
-                        </div>
-
-                        <!-- composer.json -->
-                        <div class="rounded-2xl border border-white/10 bg-black/40 overflow-hidden mb-6">
-                            <div class="flex items-center gap-2 px-4 py-2.5 border-b border-white/10 bg-white/[0.03]">
-                                <span class="w-2.5 h-2.5 rounded-full bg-white/15"></span><span class="w-2.5 h-2.5 rounded-full bg-white/15"></span><span class="w-2.5 h-2.5 rounded-full bg-white/15"></span>
-                                <span class="ml-2 font-mono text-xs text-gray-500">composer.json</span>
-                            </div>
-<pre class="font-mono text-[13px] leading-6 p-4 md:p-5 overflow-x-auto text-gray-300"><span class="text-sky-300">"require"</span>: {
-  <span class="text-emerald-300">"php"</span>: <span class="text-amber-200">"^8.4"</span>,
-  <span class="text-emerald-300">"laravel/framework"</span>: <span class="text-amber-200">"^13.0"</span>,   <span class="hidden sm:inline text-gray-500">// the foundation</span>
-  <span class="text-emerald-300">"filament/filament"</span>: <span class="text-amber-200">"^5.0"</span>,    <span class="hidden sm:inline text-gray-500">// admin panels</span>
-  <span class="text-emerald-300">"laravel/sanctum"</span>: <span class="text-amber-200">"^4.0"</span>,      <span class="hidden sm:inline text-gray-500">// API auth</span>
-  <span class="text-emerald-300">"nuwave/lighthouse"</span>: <span class="text-amber-200">"^6.0"</span>     <span class="hidden sm:inline text-gray-500">// GraphQL</span>
-}</pre>
-                        </div>
-
-                        <ul class="mt-auto flex flex-wrap gap-2 text-sm">
-                            <li class="chip chip-hot">PHP</li>
-                            <li class="chip chip-hot">Laravel</li>
-                            <li class="chip chip-hot">Filament</li>
-                            <li class="chip">Laravel Sanctum</li>
-                            <li class="chip">Auth &amp; Authorization</li>
-                            <li class="chip">Queues &amp; Scheduler</li>
-                        </ul>
-                    </article>
-
-                    <!-- APIs -->
-                    <article class="spotlight md:col-span-3 lg:col-span-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 slide-up">
-                        <div class="flex items-center justify-between mb-5">
-                            <div>
-                                <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky-400 mb-2">02 · Interface</p>
-                                <h3 class="text-xl md:text-2xl font-bold">REST &amp; GraphQL APIs</h3>
-                            </div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/graphql/graphql-plain.svg" alt="GraphQL" class="w-9 h-9" loading="lazy">
-                        </div>
-                        <div class="space-y-2 font-mono text-[12.5px]">
-                            <div class="flex items-center gap-3 rounded-xl bg-black/40 border border-white/10 px-3 py-2.5">
-                                <span class="px-1.5 py-0.5 rounded bg-emerald-400/15 text-emerald-300 font-semibold">GET</span>
-                                <span class="text-gray-300 truncate">/api/v1/orders?status=paid</span>
-                                <span class="ml-auto text-emerald-300">200</span>
-                            </div>
-                            <div class="flex items-center gap-3 rounded-xl bg-black/40 border border-white/10 px-3 py-2.5">
-                                <span class="px-1.5 py-0.5 rounded bg-sky-400/15 text-sky-300 font-semibold">POST</span>
-                                <span class="text-gray-300 truncate">/graphql &nbsp;<span class="text-gray-500">{ factories { name } }</span></span>
-                                <span class="ml-auto text-emerald-300">200</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Data -->
-                    <article class="spotlight md:col-span-3 lg:col-span-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 slide-up">
-                        <div class="flex items-center justify-between mb-5">
-                            <div>
-                                <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky-400 mb-2">03 · Data</p>
-                                <h3 class="text-xl md:text-2xl font-bold">Database &amp; Performance</h3>
-                            </div>
-                            <span class="w-11 h-11 rounded-xl bg-white/90 grid place-items-center shrink-0"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="MySQL" class="w-8 h-8" loading="lazy"></span>
-                        </div>
-                        <ul class="flex flex-wrap gap-2 text-sm">
-                            <li class="chip chip-hot">MySQL</li>
-                            <li class="chip">Database Design</li>
-                            <li class="chip">Query Optimization</li>
-                            <li class="chip">Indexing</li>
+                        </header>
+                        <ul class="stack-chips">
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Filament</li>
+                            <li>REST APIs &amp; GraphQL</li>
+                            <li>Laravel Sanctum</li>
+                            <li>Auth &amp; Authorization</li>
+                            <li>MySQL</li>
+                            <li>Database Design</li>
+                            <li>Query Optimization</li>
+                            <li>Queues &amp; Scheduler</li>
                         </ul>
                     </article>
 
                     <!-- Architecture -->
-                    <article class="spotlight md:col-span-6 lg:col-span-7 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 slide-up">
-                        <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky-400 mb-2">04 · Architecture</p>
-                        <h3 class="text-xl md:text-2xl font-bold mb-6">Clean, Layered Systems</h3>
-
-                        <!-- request lifecycle -->
-                        <ol class="flex flex-wrap items-center gap-2 font-mono text-xs md:text-[13px] mb-6" aria-label="Request flow through the layers">
-                            <li class="layer">Request</li>
-                            <li aria-hidden="true" class="text-gray-600">→</li>
-                            <li class="layer">Controller</li>
-                            <li aria-hidden="true" class="text-gray-600">→</li>
-                            <li class="layer layer-hot">Service</li>
-                            <li aria-hidden="true" class="text-gray-600">→</li>
-                            <li class="layer layer-hot">Repository</li>
-                            <li aria-hidden="true" class="text-gray-600">→</li>
-                            <li class="layer">Model</li>
-                        </ol>
-
-                        <ul class="flex flex-wrap gap-2 text-sm">
-                            <li class="chip">SOLID Principles</li>
-                            <li class="chip">Repository Pattern</li>
-                            <li class="chip">Service Pattern</li>
-                            <li class="chip">Dependency Injection</li>
-                            <li class="chip">Service Container</li>
-                            <li class="chip chip-hot">Multi-Tenant</li>
-                            <li class="chip chip-hot">SaaS Architecture</li>
+                    <article class="stack-card slide-up" style="transition-delay: 100ms;">
+                        <header class="stack-head">
+                            <div>
+                                <p class="stack-label">02 · Architecture</p>
+                                <h3 class="stack-title">Clean, Scalable Design</h3>
+                            </div>
+                            <div class="stack-icon">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16M8 6v12m8-12v12"/></svg>
+                            </div>
+                        </header>
+                        <ul class="stack-chips">
+                            <li>SOLID Principles</li>
+                            <li>Repository Pattern</li>
+                            <li>Service Pattern</li>
+                            <li>Dependency Injection</li>
+                            <li>Service Container</li>
+                            <li>Multi-Tenant</li>
+                            <li>SaaS Architecture</li>
                         </ul>
                     </article>
 
                     <!-- Frontend -->
-                    <article class="spotlight md:col-span-3 lg:col-span-5 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 slide-up">
-                        <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky-400 mb-2">05 · Frontend</p>
-                        <h3 class="text-xl md:text-2xl font-bold mb-6">Interfaces That Ship</h3>
-                        <ul class="grid grid-cols-5 gap-3">
-                            <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy"><span>HTML5</span></li>
-                            <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy"><span>CSS3</span></li>
-                            <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy"><span>Tailwind</span></li>
-                            <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy"><span>JavaScript</span></li>
-                            <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg" alt="" loading="lazy"><span>Blade</span></li>
+                    <article class="stack-card slide-up">
+                        <header class="stack-head">
+                            <div>
+                                <p class="stack-label">03 · Frontend</p>
+                                <h3 class="stack-title">Interfaces</h3>
+                            </div>
+                            <div class="stack-logos">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" loading="lazy">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="HTML5" loading="lazy">
+                            </div>
+                        </header>
+                        <ul class="stack-chips">
+                            <li>HTML5 &amp; CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>JavaScript</li>
+                            <li>Blade</li>
                         </ul>
-                        <p class="mt-6 text-sm text-gray-400 leading-relaxed">Blade and Tailwind for storefronts and marketing sites, Filament for admin and tenant dashboards.</p>
                     </article>
 
-                    <!-- Tooling marquee -->
-                    <article class="md:col-span-6 lg:col-span-12 rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 slide-up">
-                        <div class="flex flex-col md:flex-row md:items-center gap-6">
-                            <div class="md:w-56 shrink-0">
-                                <p class="font-mono text-xs uppercase tracking-[0.2em] text-sky-400 mb-2">06 · Workflow</p>
-                                <h3 class="text-xl md:text-2xl font-bold">Tooling &amp; Quality</h3>
+                    <!-- Tools -->
+                    <article class="stack-card slide-up" style="transition-delay: 100ms;">
+                        <header class="stack-head">
+                            <div>
+                                <p class="stack-label">04 · Tools</p>
+                                <h3 class="stack-title">Workflow &amp; Quality</h3>
                             </div>
-                            <div class="marquee relative flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_8%,#000_92%,transparent)]">
-                                <ul class="marquee-track flex w-max gap-3">
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" loading="lazy">Git</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" class="invert" loading="lazy">GitHub</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bitbucket/bitbucket-original.svg" alt="" loading="lazy">Bitbucket</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sourcetree/sourcetree-original.svg" alt="" loading="lazy">SourceTree</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="" class="invert" loading="lazy">GitHub Desktop</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/composer/composer-original.svg" alt="" loading="lazy">Composer</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/npm/npm-original-wordmark.svg" alt="" loading="lazy">NPM</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg" alt="" loading="lazy">Postman</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy">Docker</li>
-                                    <li class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt="" loading="lazy">Linux</li>
-                                    <li class="tool"><span class="tool-glyph text-pink-300">P</span>Pest Testing</li>
-                                    <li class="tool"><span class="tool-glyph text-emerald-300">✓</span>Code Review</li>
-                                </ul>
+                            <div class="stack-logos">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git" loading="lazy">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg" alt="Postman" loading="lazy">
                             </div>
-                        </div>
+                        </header>
+                        <ul class="stack-chips">
+                            <li>Git, GitHub, Bitbucket</li>
+                            <li>SourceTree, GitHub Desktop</li>
+                            <li>Composer, NPM</li>
+                            <li>Postman</li>
+                            <li>Docker &amp; Linux</li>
+                            <li>Pest Testing</li>
+                            <li>Code Review</li>
+                        </ul>
                     </article>
                 </div>
             </div>
@@ -868,6 +808,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js?v=4"></script>
+    <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>
